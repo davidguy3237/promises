@@ -96,6 +96,7 @@ describe('Promisification', function() {
         .catch(done);
     });
 
+
     it('should make any errors available in the `catch` block', function(done) {
       readFileAndMakeItFunnyAsync(__dirname + '/../files/nonexistent_file.txt')
         .catch(function(err) {
